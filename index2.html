@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tu{
+            background:rgb(225, 225, 107);
+        }
+        .ui{
+            background:rgb(119, 119, 226);
+        }
+        .ku{
+            background:rgb(143, 217, 143);
+        }
+    </style>
+</head>
+<body>
+    <table width="50%" cellpadding="3" celspacing="2" border="3">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+    </tr>
+    <tr>
+        <th>Begin</th>
+        <th>End</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td rowspan="2" class="tu">8.00am</td>
+        <td rowspan="2" class="ui">5.00pm</td>
+        <td>Introduction to XML</td>
+    </tr>
+    <tr>
+        <td>Validity:DTD and Relax NG</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Tuesday</td>
+        <td class="tu">8.00am</td>
+        <td class="tu">11.00am</td>
+        <td rowspan="2">XPath</td>
+    </tr>
+    <tr>
+        <td class="ku">11.00am</td>
+        <td class="ku">2.00pm</td>
+        
+    </tr>
+    <tr>
+        <td class="ku">2.00pm</td>
+        <td class="ui">5.00pm</td>
+        <td>XSL Transformation</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td class="tu">8.00am</td>
+        <td class="ku">12.00pm</td>
+        <td>XSL Formatting Objects</td>
+    </tr>
+    </table>
+</body>
+</html>

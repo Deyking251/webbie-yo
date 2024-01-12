@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverse(num){
+            var num = Number(document.getElementById("number12").value);
+            var rev=0;
+     temp=num;
+    var rem=0;
+    while(temp>0){
+        rem=temp%10;
+        rev=rev*10+rem;
+        temp=parseInt(temp/10);
+    }
+        window.alert("rev no is"+rev);
+    
+        }
+    </script>
+    <div>
+        
+
+        <h3>Reversible no</h3>
+        <label for="Name">Enter the number</label>
+        <input type="number" id="number12" name="Name"/>
+    
+        </div>
+        <div><center><button onClick="reverse()">CHECK</button></div>
+</body>
+</html>

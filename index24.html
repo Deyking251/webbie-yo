@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n){
+            var t1=0;
+            var t2=1;
+            var nterms;
+            nterms=t1+t2;
+            const n = Number(document.getElementById("number32").value);
+            for(i=1;i<=n;i++){
+                window.alert( "fibonacci series is"+t1);
+                t1=t2;
+                t2=nterms;
+                nterms=t1+t2;
+            }
+        }
+    </script>
+    <div>
+        <h3>Fibonacci Series</h3>
+        <label for="Name">Enter the number</label>
+        <input type="number" id="number32" name="Name"/>
+    </div>
+    <div><center><button onClick="palindrome()">CHECK</button></div>
+</body>
+</html>

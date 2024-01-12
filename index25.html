@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function armstrong(){
+            var num= Number(document.getElementById("num12345").value);
+            var nod=num.toString().length;
+            var rem;
+            var sum = 0;
+            
+            temp=num;
+            
+            while(temp>0){
+                rem=temp%10;
+                sum+=(rem**nod);
+                temp=parseInt(temp/10);
+            }
+            if(sum==num){
+                window.alert(`armstron no`);
+    }
+    else{
+        window.alert(`not armstrong no`);
+    }
+
+        }
+    </script>
+    <div>
+        <h3>armstrong no. or not</h3>
+    
+    
+        <label for="Name">Enter the number</label>
+        <input type="number" id="num12345" name="Name"/>
+    </div>
+    <div><center> <button onclick="armstrong()">CHECK</button></center></div>
+    
+</body>
+</html>
